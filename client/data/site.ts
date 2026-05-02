@@ -23,7 +23,6 @@ export const HERO_IMAGE = `${CDN}/6995c0b34d145599228d77e7_Lubbe-9-1024x683.jpg`
 export const ABOUT_IMAGE = `${CDN}/6995c0ada1231dafa8038c3e_Flaye-2854.jpg`;
 
 export const GALLERY_IMAGES: { src: string; alt: string }[] = [
-  { src: `${CDN}/69958d6ba932fc62e3e437eb_70ea27c2-b162-462b-a40b-52d06c64a96b.avif`, alt: 'BosBoma celebration moment' },
   { src: `${CDN}/6996fb94b497b065db4163de_ad9e6540-4950-41b3-9b20-ef64a869aea3.png`, alt: 'BosBoma lavender reception under the boma' },
   { src: `${CDN}/6995c09d142e90c0090482bf_Flaye-2741.jpg`, alt: 'BosBoma open-air boma' },
   { src: `${CDN}/6995c0ada1231dafa8038c3e_Flaye-2854.jpg`, alt: 'BosBoma bush ceremony' },
