@@ -43,7 +43,7 @@ export default function Reviews() {
                 &ldquo;{r.quote}&rdquo;
               </blockquote>
               <figcaption className="mt-5 text-sm font-medium uppercase tracking-wider text-sand-200">
-                &mdash; {r.name}
+                {r.name}
               </figcaption>
             </motion.figure>
           ))}

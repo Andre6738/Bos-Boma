@@ -45,7 +45,7 @@ export default function Hero() {
           className="mt-6 max-w-2xl text-base leading-relaxed text-bone-100/90 sm:text-lg"
         >
           Host your wedding in a serene, open-air setting where rustic textures meet modern luxury.
-          Exclusive use, tailored celebrations and unforgettable moments beneath the African sky &mdash;
+          Exclusive use, tailored celebrations and unforgettable moments beneath the African sky,
           just north of Pretoria.
         </motion.p>
 
