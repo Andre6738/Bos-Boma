@@ -11,6 +11,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollProgress from './components/ScrollProgress';
 import Marquee from './components/Marquee';
+import Newsletter from './components/Newsletter';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Reviews />
         <LocationMap />
         <Contact />
+        <Newsletter />
       </main>
       <Footer />
     </div>
