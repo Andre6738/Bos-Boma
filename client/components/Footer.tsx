@@ -40,7 +40,9 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             <li><a href="#about" className="text-bone-100/80 hover:text-copper">About</a></li>
             <li><a href="#features" className="text-bone-100/80 hover:text-copper">Features</a></li>
+            <li><a href="#specials" className="text-bone-100/80 hover:text-copper">Specials</a></li>
             <li><a href="#gallery" className="text-bone-100/80 hover:text-copper">Gallery</a></li>
+            <li><a href="#awards" className="text-bone-100/80 hover:text-copper">Awards</a></li>
             <li><a href="#reviews" className="text-bone-100/80 hover:text-copper">Reviews</a></li>
             <li><a href="#location" className="text-bone-100/80 hover:text-copper">Find Us</a></li>
             <li><a href="#contact" className="text-bone-100/80 hover:text-copper">Contact</a></li>

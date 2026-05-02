@@ -5,7 +5,9 @@ import { LOGO, SITE } from '../data/site';
 const NAV = [
   { href: '#about', label: 'About' },
   { href: '#features', label: 'Features' },
+  { href: '#specials', label: 'Specials' },
   { href: '#gallery', label: 'Gallery' },
+  { href: '#awards', label: 'Awards' },
   { href: '#reviews', label: 'Reviews' },
   { href: '#location', label: 'Find Us' },
   { href: '#contact', label: 'Contact' }
