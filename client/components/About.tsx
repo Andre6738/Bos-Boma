@@ -46,14 +46,27 @@ export default function About() {
             time so the entire venue, and our undivided attention, belongs to you.
           </p>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-2xl bg-sand-50 p-5 ring-1 ring-ink/5">
-              <p className="text-3xl font-display text-copper">1</p>
-              <p className="mt-1 text-sm text-ink-soft">Event at a time. Always exclusive use.</p>
+          <div className="mt-9 grid gap-4 sm:grid-cols-3">
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-bush to-bush-dark p-5 text-bone-50 shadow-soft">
+              <div className="flex items-baseline gap-2">
+                <span className="font-display text-5xl leading-none">1</span>
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sand-200">event<br />at a time</span>
+              </div>
+              <p className="mt-3 text-xs leading-relaxed text-bone-100/80">Exclusive use, always. The venue is yours alone.</p>
             </div>
-            <div className="rounded-2xl bg-sand-50 p-5 ring-1 ring-ink/5">
-              <p className="text-3xl font-display text-copper">0</p>
-              <p className="mt-1 text-sm text-ink-soft">Corkage. Bring your own drinks.</p>
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-copper to-copper-dark p-5 text-bone-50 shadow-soft">
+              <div className="flex items-baseline gap-2">
+                <span className="font-display text-5xl leading-none">R0</span>
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sand-100">corkage<br />no fees</span>
+              </div>
+              <p className="mt-3 text-xs leading-relaxed text-bone-50/85">Bring your own drinks. We never charge for it.</p>
+            </div>
+            <div className="group relative overflow-hidden rounded-2xl bg-bone-50 p-5 ring-1 ring-ink/10 shadow-soft">
+              <div className="flex items-baseline gap-2">
+                <span className="font-display text-5xl leading-none text-copper">200</span>
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-mute">guests<br />capacity</span>
+              </div>
+              <p className="mt-3 text-xs leading-relaxed text-ink-soft">Intimate gatherings to grand celebrations.</p>
             </div>
           </div>
 
