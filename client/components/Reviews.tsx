@@ -9,9 +9,10 @@ export default function Reviews() {
       className="section relative overflow-hidden bg-gradient-to-b from-bush to-bush-dark text-bone-50"
     >
       <div className="absolute inset-0 -z-10 opacity-20">
-        <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-ember-glow blur-3xl" />
-        <div className="absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-copper blur-3xl" />
+        <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-ember-glow blur-3xl animate-blob-drift" />
+        <div className="absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-copper blur-3xl animate-blob-drift" style={{ animationDelay: '-9s' }} />
       </div>
+      <div className="absolute inset-0 -z-10 bg-dots opacity-20" />
 
       <div className="container-prose">
         <div className="mx-auto mb-14 max-w-2xl text-center sm:mb-20">

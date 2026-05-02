@@ -33,9 +33,9 @@ export default function Awards() {
                 <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-sand-100 via-bone-50 to-sand-200">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(184,107,58,0.15),transparent_60%)]" />
                   <div className="pointer-events-none absolute inset-0 opacity-30" style={{backgroundImage:'radial-gradient(circle, rgba(184,107,58,0.4) 1px, transparent 1px)', backgroundSize:'18px 18px'}} />
-                  <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-bone-50/90 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-copper shadow-soft backdrop-blur">
-                    <Sparkles size={10} />
-                    Certified
+                  <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-bone-50/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-copper shadow-soft backdrop-blur">
+                    <Sparkles size={10} className="animate-flicker" />
+                    {a.subtitle.includes('Member') ? 'Proud Member' : 'Award Winner'}
                   </span>
                   <motion.img
                     src={a.image}

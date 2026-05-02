@@ -8,7 +8,8 @@ export default function Specials() {
   const [lightbox, setLightbox] = useState<string | null>(null);
   return (
     <section id="specials" className="section relative overflow-hidden bg-bone-50">
-      <div className="container-prose">
+      <div className="pointer-events-none absolute inset-0 bg-grid opacity-60" />
+      <div className="container-prose relative">
         <SectionHeading
           eyebrow="Our specials"
           title="Curated offers, just for you."

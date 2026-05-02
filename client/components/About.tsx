@@ -78,7 +78,7 @@ export default function About() {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-bone-50/5 to-bone-50/15 opacity-0 transition-opacity group-hover:opacity-100" />
               <div className="relative flex items-baseline gap-2">
-                <CountUp to={0} prefix="R" className="font-display text-5xl leading-none" />
+                <CountUp to={0} from={750} prefix="R" duration={2} className="font-display text-5xl leading-none" />
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sand-100">corkage<br />no fees</span>
               </div>
               <p className="relative mt-3 text-xs leading-relaxed text-bone-50/85">Bring your own drinks. We never charge for it.</p>
@@ -90,7 +90,7 @@ export default function About() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-copper/0 to-copper/10 opacity-0 transition-opacity group-hover:opacity-100" />
               <div className="relative flex items-baseline gap-2">
-                <CountUp to={200} className="font-display text-5xl leading-none text-copper" />
+                <CountUp to={200} duration={2.2} className="font-display text-5xl leading-none text-copper" />
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-mute">guests<br />capacity</span>
               </div>
               <p className="relative mt-3 text-xs leading-relaxed text-ink-soft">Intimate gatherings to grand celebrations.</p>
