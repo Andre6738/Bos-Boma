@@ -18,7 +18,7 @@ export const LOGO = `${CDN}/6995976a5a7ffe988359a11c_66141fdb-a28e-499e-9ed2-09c
 export const LOGO_ALT = `${CDN}/699d902ee4194059c87aa0aa_6aa44b2d-bccc-455c-b3e5-b84924bd2bbd_removalai_preview.png`;
 export const LOGO_MARK = `${CDN}/69a05aa394c44bd2d7c9bf64_70f07e87-e2c5-4181-b985-39c5549cd85e_removalai_preview.png`;
 
-export const HERO_IMAGE = `${CDN}/6995c09d142e90c0090482bf_Flaye-2741.jpg`;
+export const HERO_IMAGE = `${CDN}/6995c0b34d145599228d77e7_Lubbe-9-1024x683.jpg`;
 
 export const ABOUT_IMAGE = `${CDN}/6995c0ada1231dafa8038c3e_Flaye-2854.jpg`;
 
