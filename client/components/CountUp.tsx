@@ -13,7 +13,7 @@ interface Props {
 export default function CountUp({
   to,
   from = 0,
-  duration = 1.8,
+  duration = 1,
   prefix = '',
   suffix = '',
   className = ''
@@ -32,13 +32,17 @@ export default function CountUp({
     return () => controls.stop();
   }, [inView, to, from, duration]);
 
+  const maxDigits = Math.max(String(Math.abs(to)).length, String(Math.abs(from)).length);
+  const reservedCh = prefix.length + maxDigits + suffix.length;
+
   return (
     <motion.span
       ref={ref}
       initial={{ opacity: 0, y: 12 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5 }}
-      className={className}
+      transition={{ duration: 0.4 }}
+      className={`inline-block tabular-nums text-right ${className}`}
+      style={{ minWidth: `${reservedCh}ch` }}
     >
       {prefix}
       {Math.round(value)}

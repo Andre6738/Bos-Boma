@@ -58,40 +58,49 @@ export default function About() {
             time so the entire venue, and our undivided attention, belongs to you.
           </p>
 
-          <div className="mt-9 grid gap-4 sm:grid-cols-3">
+          <div className="mt-9 grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
             <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '0px 0px -10% 0px' }}
+              transition={{ duration: 0.5, delay: 0, ease: [0.22, 0.61, 0.36, 1] }}
               whileHover={{ y: -4 }}
-              transition={{ duration: 0.3 }}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-bush to-bush-dark p-5 text-bone-50 shadow-soft"
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-bush to-bush-dark p-4 text-bone-50 shadow-soft sm:p-5"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-bone-50/5 to-bone-50/15 opacity-0 transition-opacity group-hover:opacity-100" />
               <div className="relative flex items-baseline gap-2">
-                <CountUp to={1} className="font-display text-5xl leading-none" />
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sand-200">event<br />at a time</span>
+                <CountUp to={1} duration={0.9} className="font-display text-4xl leading-none sm:text-5xl" />
+                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-sand-200 sm:text-xs">event<br />at a time</span>
               </div>
               <p className="relative mt-3 text-xs leading-relaxed text-bone-100/80">Exclusive use, always. The venue is yours alone.</p>
             </motion.div>
             <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '0px 0px -10% 0px' }}
+              transition={{ duration: 0.5, delay: 0.1, ease: [0.22, 0.61, 0.36, 1] }}
               whileHover={{ y: -4 }}
-              transition={{ duration: 0.3 }}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-copper to-copper-dark p-5 text-bone-50 shadow-soft"
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-copper to-copper-dark p-4 text-bone-50 shadow-soft sm:p-5"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-bone-50/5 to-bone-50/15 opacity-0 transition-opacity group-hover:opacity-100" />
               <div className="relative flex items-baseline gap-2">
-                <CountUp to={0} from={750} prefix="R" duration={2} className="font-display text-5xl leading-none" />
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sand-100">corkage<br />no fees</span>
+                <CountUp to={0} from={750} prefix="R" duration={1.1} className="font-display text-4xl leading-none sm:text-5xl" />
+                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-sand-100 sm:text-xs">corkage<br />no fees</span>
               </div>
               <p className="relative mt-3 text-xs leading-relaxed text-bone-50/85">Bring your own drinks. We never charge for it.</p>
             </motion.div>
             <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '0px 0px -10% 0px' }}
+              transition={{ duration: 0.5, delay: 0.2, ease: [0.22, 0.61, 0.36, 1] }}
               whileHover={{ y: -4 }}
-              transition={{ duration: 0.3 }}
-              className="group relative overflow-hidden rounded-2xl bg-bone-50 p-5 ring-1 ring-ink/10 shadow-soft"
+              className="group relative overflow-hidden rounded-2xl bg-bone-50 p-4 ring-1 ring-ink/10 shadow-soft sm:p-5"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-copper/0 to-copper/10 opacity-0 transition-opacity group-hover:opacity-100" />
               <div className="relative flex items-baseline gap-2">
-                <CountUp to={200} duration={2.2} className="font-display text-5xl leading-none text-copper" />
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-mute">guests<br />capacity</span>
+                <CountUp to={200} duration={1.2} className="font-display text-4xl leading-none text-copper sm:text-5xl" />
+                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-ink-mute sm:text-xs">guests<br />capacity</span>
               </div>
               <p className="relative mt-3 text-xs leading-relaxed text-ink-soft">Intimate gatherings to grand celebrations.</p>
             </motion.div>

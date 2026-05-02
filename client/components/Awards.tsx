@@ -33,10 +33,6 @@ export default function Awards() {
                 <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-sand-100 via-bone-50 to-sand-200">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(184,107,58,0.15),transparent_60%)]" />
                   <div className="pointer-events-none absolute inset-0 opacity-30" style={{backgroundImage:'radial-gradient(circle, rgba(184,107,58,0.4) 1px, transparent 1px)', backgroundSize:'18px 18px'}} />
-                  <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-bone-50/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-copper shadow-soft backdrop-blur">
-                    <Sparkles size={10} className="animate-flicker" />
-                    {a.subtitle.includes('Member') ? 'Proud Member' : 'Award Winner'}
-                  </span>
                   <motion.img
                     src={a.image}
                     alt={a.title}
@@ -47,6 +43,10 @@ export default function Awards() {
                     transition={{ duration: 0.8, ease: [0.22, 0.61, 0.36, 1] }}
                     className="relative h-full w-full object-contain p-8 drop-shadow-xl transition-transform duration-700 group-hover:scale-110"
                   />
+                  <span className="absolute left-1/2 top-6 z-10 inline-flex -translate-x-1/2 items-center gap-1.5 rounded-full bg-bone-50/95 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-copper shadow-soft ring-1 ring-copper/20 backdrop-blur">
+                    <Sparkles size={10} className="animate-flicker" />
+                    {a.subtitle.includes('Member') ? 'Proud Member' : 'Award Winner'}
+                  </span>
                 </div>
                 <div className="flex flex-col justify-center gap-3 p-6 sm:p-8">
                   <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-gradient-to-r from-copper/15 to-ember/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-copper-dark">
