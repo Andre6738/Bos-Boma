@@ -10,6 +10,7 @@ import LocationMap from './components/LocationMap';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollProgress from './components/ScrollProgress';
+import Marquee from './components/Marquee';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Marquee />
         <Features />
         <Specials />
         <Gallery />
